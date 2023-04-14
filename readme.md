@@ -40,4 +40,7 @@ If you would like to contribute to this weather app project, please open an issu
 
 ## Contact
 
-If you have any questions or suggestions, please feel free to contact me.
+If you have any questions or suggestions, please feel free to contact me on LinkedIn 
+https://www.linkedin.com/in/yash-mishra-356280223
+
+
