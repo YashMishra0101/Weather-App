@@ -10,6 +10,15 @@
     --colorDark2:#3F72AF;
     --colorlight: #DBE2EF;;
 }
+
+@media (max-width:425px)  { 
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 .wrapper{
     width: 100vw;
     height:100vh;
