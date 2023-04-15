@@ -1,7 +1,7 @@
 # Weather App
 
-![Password Generator Preview](./Assets/Screenshot%201.png)
-![Password Generator Preview](./Assets/Screenshot%202.png)
+![Weather app Preview](./Assets/Screenshot%201.png)
+![Weather app Preview](./Assets/Screenshot%202.png)
 
 
 This is a weather app project created for practice, using HTML, CSS, and JavaScript.
