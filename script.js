@@ -6,6 +6,7 @@ const grantAccessContainer = document.querySelector(".grant-location-container")
 const searchForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
+const errors = document.querySelector(".error");
 
 //initially vairables need????
 
@@ -67,6 +68,7 @@ async function fetchUserWeatherInfo(coordinates) {
     grantAccessContainer.classList.remove("active");
     //make loader visible
     loadingScreen.classList.add("active");
+   
 
     //API CALL
     try {
@@ -74,15 +76,16 @@ async function fetchUserWeatherInfo(coordinates) {
             `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
           );
         const  data = await response.json();
-
+       
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
         renderWeatherInfo(data);
     }
-    catch(err) {
+    catch {
+        //iss catch se koi effect nahi ho raha hai nice me if cond put kiye hai jise se error show ho error work kar rha hai
+        errors.classList.add("active")
         loadingScreen.classList.remove("active");
-        
-
+        userInfoContainer.classList.remove("active");
     }
 
 }
@@ -119,7 +122,10 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
-        
+        //iss else se koi effect nahi ho raha hai nice me if cond put kiye hai jise se error show ho error work kar rha hai
+        errors.classList.add("active")
+        loadingScreen.classList.remove("active");
+        userInfoContainer.classList.remove("active");
     }
 }
 
@@ -154,6 +160,7 @@ async function fetchSearchWeatherInfo(city) {
     loadingScreen.classList.add("active");
     userInfoContainer.classList.remove("active");
     grantAccessContainer.classList.remove("active");
+    errors.classList.remove("active")
 
     try {
         const response = await fetch(
@@ -163,8 +170,16 @@ async function fetchSearchWeatherInfo(city) {
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
         renderWeatherInfo(data);
+       // iss se proper work kar raha hai
+        if(data.cod==404){
+            errors.classList.add("active")
+            userInfoContainer.classList.remove("active");
+        }
     }
-    catch(err) {
-        
+    catch {
+        //iss catch se koi effect nahi ho raha hai nice me if cond put kiye hai jise se error show ho error work kar rha hai
+        errors.classList.add("active")
+        loadingScreen.classList.remove("active");
+        userInfoContainer.classList.remove("active");
     }
 }

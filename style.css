@@ -11,11 +11,15 @@
     --colorlight: #DBE2EF;;
 }
 
-@media (max-width:425px)  { 
-    .wrapper{
+@media (max-width:450px)  { 
+    .tab-container , .parameter-container{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab{
+       margin-bottom: 1rem;
     }
 }
 
@@ -155,6 +159,7 @@ p[data-temp]{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
    
 }
 .parameter{
@@ -226,6 +231,24 @@ justify-content: center;
 align-items:center;
 border-radius: 100%;
 margin-bottom: 1px;
+}
+
+.error{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.error.active{
+    display:flex;
+}
+.error img{
+    width: 12rem;
+    height:12rem;
+}
+.error p{
+    font-size:1.5rem;
+    margin-bottom: 1rem;
 }
 
 
