@@ -35,9 +35,8 @@ This is a weather app project created for practice, using HTML, CSS, and JavaScr
 
 To get started with this weather app, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/YashMishra0101/Weather-App`
-2. Navigate to the project directory: `cd weather-app`
-3. Open `index.html` in your web browser
+1. Clone the repository: https://github.com/YashMishra0101/Weather-App
+2. Open `index.html` in your web browser
 
 ## API Usage
 
