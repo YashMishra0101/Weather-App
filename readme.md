@@ -11,19 +11,14 @@ This is a weather app project created for practice, using HTML, CSS, and JavaScr
 - Retrieves weather data from an API
 - Displays current weather conditions (temperature, wind speed and humidity )
 - Allows users to search for weather by location (city name)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 - Supports Celsius  unit
-=======
+
 - Icons representing the weather condition
 - Supports Celsius unit
  
->>>>>>> 5a10e1687f1affb2647120220d4a4df9d36c9c57
-=======
 - Icons representing the weather condition
 - Supports Celsius unit
- 
->>>>>>> 5a10e1687f1affb2647120220d4a4df9d36c9c57
 
 ## Technologies Used
 
