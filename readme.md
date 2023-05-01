@@ -6,6 +6,10 @@
 
 This is a weather app project created for practice, using HTML, CSS, and JavaScript.
 
+## 🌐 Project Demo 
+
+To see a live demo of the project, please visit : https://yashmishra-weather-app.netlify.app/
+
 ## Features
 
 - Retrieves weather data from an API
